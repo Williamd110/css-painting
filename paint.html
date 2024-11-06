@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>painting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        .item1 {
+                grid-area: header;
+        }
+         .item2 {
+             grid-area: leftside;
+         }
+         .item3 {
+             grid-area: rightside;
+         }
+         .item4 {
+             grid-area: body;
+         }
+        
+         .grid-container {
+             display: grid;
+             grid-template-areas: 
+             "header header header header header"
+             "leftside body body rightside rightside"
+             "leftside body body rightside rightside"
+             ;
+             gap: 10px;
+             background-color: aquamarine;
+             padding: 10px;
+         }
+         .grid-container > div{
+             background-color: rgb(0, 0, 255);
+             text-align: center;
+             padding: 10px;
+         }
+     </style>
+<!-- this is the submission section -->
+    <article class="button">
+        <h3 class="title">Let us know you were here!:</h3>
+        <form class="cta" action="./submission.html">
+      
+            <label class="bname" for="name">Your name:</label>
+        <input class="bname" type="text" name="name" id="name">
+        <span>
+        <label class="emaill" for="email">Email:</label>
+        <input class="emaill" type="email">
+    </span>
+        <input class="subm" type="submit" value="Thank you!">
+    </form>
+    </article>
+    <!-- this section is a WIP block grid. -->
+        <div class="grid-container">
+            <div class="item1">Header</div>
+            <div class="item2">Leftside</div>
+            <div class="item3">Rightside</div>
+            <div class="item4">Body</div>
+           
+            
+        </div>
+    
+
+    <!-- this section begins the artwork portion of the site. -->
+    <div class="sky">
+        <div class="bluesky">bluesky</div>
+        <div class="cloud">cloud</div>
+        <div class="sun">sun</div>
+    </div>
+    
+<div class="palmtrees">
+    <div class="palm1"></div>
+</div>
+
+</body>
+</html>
